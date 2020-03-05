@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<link rel = "stylesheet"  href = "css/style.css">
+<link rel="stylesheet" href="css/style.css">
 <head>
 <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="js/script.js"></script>
@@ -8,21 +8,23 @@
 <title>LPT : 롤 포지션 테스트</title>
 </head>
 <body>
-	<div class ="layout">
+	<div class="layout">
 		<h1 style="text-align: center;">Logo</h1>
 	</div>
-	
-	<div class ="main">
-		<input type="text" id="nickname" maxlength="10">
-		
-		<select id="age">
-			<option>나이</option>
-			<script>age_create();</script> 
-		</select> <br>
-		
-		<button id="start" onclick="check()">게임시작</button>
-		
-	</div>
-	
+
+	<form action = "test1.do" method = "post">
+		<div class="main">
+			<input type="text" id="nickname" maxlength="10"> <select
+				id="age">
+				<option>나이</option>
+				<script>
+					age_create();
+				</script>
+			</select> <br>
+
+			<button id="start" onclick="check()">게임시작</button>
+
+		</div>
+	</form>
 </body>
 </html>
