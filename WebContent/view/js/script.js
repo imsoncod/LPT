@@ -16,5 +16,7 @@ function check() {
 	}
 	else if(age == '나이'){
 		alert('나이를 선택해주세요');
+	}else{
+		document.getElementById("index").submit();
 	}
 }
