@@ -12,19 +12,23 @@
 		<h1 style="text-align: center;">Logo</h1>
 	</div>
 
-	<form id = "index" action = "test1.html" method = "post">
+	<form id="index" action="index.do" method="post">
+	
 		<div class="main">
-			<input type="text" id="nickname" maxlength="10"> <select
-				id="age">
+			<input name="nickname" type="text" id="nickname" maxlength="10">
+			
+			<select id="age" name="age">
 				<option>나이</option>
 				<script>
 					age_create();
 				</script>
 			</select> <br>
 
-			<button id="start" onclick="check()">게임시작</button>
+			<button type="button" id="start" onclick="check()">게임시작</button>
 
 		</div>
+		
 	</form>
+	
 </body>
 </html>

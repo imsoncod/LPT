@@ -6,11 +6,11 @@ function age_create() {
 			$age_cb.append($o);
 		}
 }
+
 /*이름 및 나이 체크 */
 function check() {
 	var nickname = document.getElementById("nickname").value;
 	var age = document.getElementById("age").value;
-	
 	if(nickname == ''){
 		alert('닉네임을 입력해주세요');
 	}
