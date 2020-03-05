@@ -23,7 +23,7 @@ public class TestDTO {
 	}
 	
 	public String getResult() {
-		return result;
+		return result; 
 	}
 	
 	public void setResult(String result) {
