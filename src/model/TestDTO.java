@@ -4,6 +4,7 @@ package model;
 public class TestDTO {
 	private int num;
 	private String nickname;
+	private int age;
 	private String result;
 	
 	public int getNum() {
@@ -20,6 +21,14 @@ public class TestDTO {
 	
 	public void setNickname(String nickname) {
 		this.nickname = nickname;
+	}
+	
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
 	}
 	
 	public String getResult() {
