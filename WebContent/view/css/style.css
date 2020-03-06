@@ -72,17 +72,21 @@ html, body {
 	margin-top: 10px;
 }
 
+/*질문 디자인*/
 .question_box {
 	width: auto;
 	height: auto;
-	display:inline-block;
+	text-align: center;
+	background: black;
 }
 
-/*질문 디자인*/
 .question {
-	width: 100%;
+	width: auto;
 	height: auto;
 	margin-top: 1em;
+	text-align: left;
+	background: red;
+	display: inline-block;
 }
 
 .question span {
