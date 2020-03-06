@@ -5,9 +5,9 @@ import java.sql.*;
 public class TestDAO {
 	private static Connection conn;
 	
-	private static String url = "jdbc:mysql://wjgn0406.cafe24.com/wjgn0406";
-	private static String id = "wjgn0406";
-	private static String pw = "dhsfkdls0129!";
+	private static String url = "";
+	private static String id = "";
+	private static String pw = "";
 	
 	//데이터베이스 연결
 	public TestDAO() {
