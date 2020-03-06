@@ -107,3 +107,24 @@ html, body {
 	margin-top: 0.5em;
 	margin-left: 0.2em;
 }
+
+.result {
+	width: auto;
+	height: auto;
+	text-align: center;
+	margin-top: 165px;
+}
+
+.result #positon{
+	font-size: 5em;
+}
+
+.result #positon_text{
+	font-size: 1em;
+}
+
+/*그래프 디자인*/
+.result #graph {
+	width: auto;
+	height: 500px;
+}

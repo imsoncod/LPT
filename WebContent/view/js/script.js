@@ -64,3 +64,28 @@ function resultpage() {
 		document.getElementById("test2").submit();
 	}
 }
+
+/*그래프 스크립트*/
+function graph() {
+    google.charts.load("current", {packages:["corechart"]});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['LPT', 'Positon'],
+        ['탑',  5],
+        ['원딜',  3],
+        ['정글',  3.66],
+        ['서포터', 2.316],
+        ['미드', 1.0791]
+      ]);
+
+    var options = {
+      legend: 'none',
+      pieSliceText: 'label',
+      pieStartAngle: 100,
+    };
+
+      var chart = new google.visualization.PieChart(document.getElementById('graph'));
+      chart.draw(data, options);
+    }
+}

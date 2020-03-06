@@ -97,7 +97,7 @@ public class TestController extends HttpServlet{
 					TestDAO dao = new TestDAO();
 					dao.insertTest(dto);
 					
-					response.sendRedirect("result.html");
+					response.sendRedirect("result.jsp");
 					break;	
 			}
 		}
