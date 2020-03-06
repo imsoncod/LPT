@@ -11,7 +11,7 @@
 </head>
 <body>
 	<div class="layout">
-		<h1 style="text-align: center;">Logo</h1>
+		<img  src="img/logoname.png"> <br>
 	</div>
 
 	<div class ="result">
