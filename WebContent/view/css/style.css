@@ -71,3 +71,22 @@ html, body {
 	border-radius: 4px;
 	margin-top: 10px;
 }
+
+.question_box {
+	width: auto;
+	height: auto;
+	display:inline-block;
+}
+
+/*질문 디자인*/
+.question {
+	width: 100%;
+	height: auto;
+	margin-top: 1em;
+}
+
+.question span {
+	font-size: 23px;
+}
+.answer {
+}
