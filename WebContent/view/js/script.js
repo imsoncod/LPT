@@ -20,3 +20,24 @@ function check() {
 		document.getElementById("index").submit();
 	}
 }
+
+function nextpage() {
+	var go = true;	
+	for(var i = 1; i <= 10; i++) {
+		var check = document.getElementsByName('q'+i);
+		var temp = false;
+		for(var j = 0; j < check.length; j++){
+			if(check[j].checked == true){
+				temp = true;
+			}
+		}
+		if(temp == false){
+			alert(i+'번째 문항에 응답해주세요');
+			go = false;
+			break;
+		}
+	}
+	if(go==true){
+		document.getElementById("test1").submit();
+	}
+}
