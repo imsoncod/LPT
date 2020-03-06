@@ -1,19 +1,10 @@
 package model;
 
-//Last Update : 2020-03-05
+//Last Update : 2020-03-06
 public class TestDTO {
-	private int num;
 	private String nickname;
 	private int age;
 	private String result;
-	
-	public int getNum() {
-		return num;
-	}
-	
-	public void setNum(int num) {
-		this.num = num;
-	}
 	
 	public String getNickname() {
 		return nickname;

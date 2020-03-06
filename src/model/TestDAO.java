@@ -5,9 +5,9 @@ import java.sql.*;
 public class TestDAO {
 	private static Connection conn;
 	
-	private static String url = "";
-	private static String id = "";
-	private static String pw = "";
+	private static String url = "jdbc:mysql://wjgn0406.cafe24.com/wjgn0406";
+	private static String id = "wjgn0406";
+	private static String pw = "dhsfkdls0129!";
 	
 	//데이터베이스 연결
 	public TestDAO() {
@@ -28,14 +28,13 @@ public class TestDAO {
 	
 	//Test결과 DB삽입
 	public boolean insertTest(TestDTO dto) {
-		String query = "insert into Test values(?, ?, ?, ?)";
+		String query = "insert into Test values(num, ?, ?, ?)";
 		boolean check = false;
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(query);
-			pstmt.setInt(1, dto.getNum());
-			pstmt.setString(2, dto.getNickname());
-			pstmt.setInt(3, dto.getAge());
-			pstmt.setString(4, dto.getResult());
+			pstmt.setString(1, dto.getNickname());
+			pstmt.setInt(2, dto.getAge());
+			pstmt.setString(3, dto.getResult());
 			
 			int x = pstmt.executeUpdate();
 			if(x < 1) {
