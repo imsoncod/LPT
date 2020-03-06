@@ -42,3 +42,25 @@ function nextpage() {
 		document.getElementById("test1").submit();
 	}
 }
+
+/*다음 페이지로 넘어갈지 체크*/
+function resultpage() {
+	var go = true; //submit여부를 결정하는 변수
+	for(var i = 11; i <= 20; i++) {
+		var check = document.getElementsByName('q'+i);
+		var temp = false;
+		for(var j = 0; j < check.length; j++){
+			if(check[j].checked == true){
+				temp = true; //문항 응답여부를 결정하는 변수
+			}
+		}
+		if(temp == false){ //문항에 응답하지 않았을 경우
+			alert(i+'번째 문항에 응답해주세요');
+			go = false;
+			break;
+		}
+	}
+	if(go==true){
+		document.getElementById("test2").submit();
+	}
+}
