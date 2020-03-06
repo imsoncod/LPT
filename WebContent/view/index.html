@@ -10,23 +10,21 @@
 </head>
 <body>
 	<div class="layout">
-		<h1 style="text-align: center;">Logo</h1>
+		<img  src="img/logoname.png"> <br>
 	</div>
 
 	<form id="index" action="index.do" method="post">
 	
 		<div class="main">
-			<input name="nickname" type="text" id="nickname" maxlength="10">
-			
-			<select id="age" name="age">
+			<div class="mainbox" >
+				<img  src="img/logo.png"> <br>
+				<input name="nickname" type="text" id="nickname" maxlength="10" placeholder="닉네임을 설정해주세요.">
+				<select id="age" name="age">
 				<option>나이</option>
-				<script>
-					age_create();
-				</script>
-			</select> <br>
-
-			<button type="button" id="start" onclick="check()">테스트</button>
-
+				<script> age_create();</script>
+				</select> <br>
+				<button type="button" id="start" onclick="check()">검사 시작</button>
+			</div>
 		</div>
 		
 	</form>
