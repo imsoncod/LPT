@@ -30,12 +30,7 @@
 			var c = document.getElementById('c').value;
 			var d = document.getElementById('d').value;
 			var e = document.getElementById('e').value;
-			console.log(a);
-			console.log(b);
-			console.log(c);
-			console.log(d);
-			console.log(e);
-			graph(a,b,c,d,e);
+			graph(Number(a), Number(b), Number(c), Number(d), Number(e));
 		</script>
 		<div id="graph"></div>
 	</div>
