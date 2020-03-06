@@ -82,6 +82,13 @@ html, body {
 	margin-top: 70px;
 }
 
+.question_boxtobox {
+	width : auto;
+	height: auto;
+	display: inline-block;
+	text-align: left;
+}
+
 .question {
 	width: auto;
 	height: auto;

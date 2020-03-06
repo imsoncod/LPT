@@ -21,17 +21,18 @@ function check() {
 	}
 }
 
+/*다음 페이지로 넘어갈지 체크*/
 function nextpage() {
-	var go = true;	
+	var go = true; //submit여부를 결정하는 변수
 	for(var i = 1; i <= 10; i++) {
 		var check = document.getElementsByName('q'+i);
 		var temp = false;
 		for(var j = 0; j < check.length; j++){
 			if(check[j].checked == true){
-				temp = true;
+				temp = true; //문항 응답여부를 결정하는 변수
 			}
 		}
-		if(temp == false){
+		if(temp == false){ //문항에 응답하지 않았을 경우
 			alert(i+'번째 문항에 응답해주세요');
 			go = false;
 			break;
