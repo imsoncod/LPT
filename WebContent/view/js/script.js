@@ -67,12 +67,6 @@ function resultpage() {
 
 /*그래프 스크립트*/
 function graph(a, b, c, d, e) {
-	alert('Test');
-	console.log(a);
-	console.log(b);
-	console.log(c);
-	console.log(d);
-	console.log(e);
     google.charts.load("current", {packages:["corechart"]});
     google.charts.setOnLoadCallback(drawChart);
     function drawChart() {
@@ -86,9 +80,9 @@ function graph(a, b, c, d, e) {
       ]);
       
     var options = {
-      legend: 'none',
-      pieSliceText: 'label',
-      pieStartAngle: 100,
+    	legend: 'none',
+    	pieSliceText: 'label',
+    	pieStartAngle: 100,
     };
 
       var chart = new google.visualization.PieChart(document.getElementById('graph'));

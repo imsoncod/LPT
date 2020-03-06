@@ -32,7 +32,7 @@
 			var e = document.getElementById('e').value;
 			graph(Number(a), Number(b), Number(c), Number(d), Number(e));
 		</script>
-		<div id="graph"></div>
+		<div id="graph"><span id="graph_text">다른 사람들은 어떨까?</span></div><br>
 	</div>
 </body>
 </html>

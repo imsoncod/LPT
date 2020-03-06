@@ -52,6 +52,7 @@ html, body {
 	border-radius: 4px;
 	font-size: 14px;
 	outline: none;
+	padding-left: 0.2em;
 }
 
 .mainbox #age{
@@ -67,7 +68,7 @@ html, body {
 	outline: none;
 }
 
-.mainbox #start{
+.mainbox #start_box{
 	width: 100%;
 	height: 3.7em;
 	border: 1px solid #BDBDBD;
@@ -76,8 +77,22 @@ html, body {
 	border-radius: 4px;
 	background: #58ACFA;
 	font-weight: bold;
+	cursor: pointer;
 	color: #ffffff; 
 	margin-top: 10px;
+	outline: none;
+}
+
+.mainbox #start{
+	width: auto;
+	height: auto;
+	display: inline-block;
+	background: #58ACFA;
+	font-weight: bold;
+	font-size: 16px;
+	font-family: "굴림";
+	cursor: pointer;
+	color: #ffffff; 
 	outline: none;
 }
 
@@ -132,8 +147,12 @@ html, body {
 
 /*그래프 디자인*/
 .result #graph {
-	width: auto;
-	height: 500px;
+	width: 400px;
+	height: 400px;
 	display: inline-block;
 	z-index: 1;
+}
+
+.result #graph_text{
+	font-size: 1em;
 }
