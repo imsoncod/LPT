@@ -19,7 +19,7 @@
 		<img  src="img/top.png"> <br>
 		<span id="positon">탑</span> <br><br>
 		<span id="positon_text">당신은 독고다이 탑신병자입니다!</span> <br><br>
-		<div id="graph" ></div>
+		<div id="graph"></div>
 	</div>
 </body>
 </html>
