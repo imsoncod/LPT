@@ -26,6 +26,8 @@ public class TestController extends HttpServlet{
 			HttpSession session = request.getSession(true);
 			session.setAttribute("nickname", nickname);
 			session.setAttribute("age", age);
+			
+			response.sendRedirect("test1.html");
 		}
 		
 	}
