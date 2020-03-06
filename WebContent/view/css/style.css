@@ -38,6 +38,11 @@ html, body {
 	display: inline-block;
 }
 
+.mainbox #logo{
+	margin-bottom: 15px;
+	margin-left: 10px;
+}
+
 .mainbox #nickname{
 	width: 70%;
 	height: 3.7em;
