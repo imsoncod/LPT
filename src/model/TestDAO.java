@@ -5,9 +5,9 @@ import java.sql.*;
 public class TestDAO {
 	private static Connection conn;
 	
-	private static String url = "";
-	private static String id = "";
-	private static String pw = "";
+	private static String url = "jdbc:mysql://wjgn0406.cafe24.com/wjgn0406";
+	private static String id = "wjgn0406";
+	private static String pw = "dhsfkdls0129!";
 	
 	//데이터베이스 연결
 	public TestDAO() {
@@ -47,6 +47,25 @@ public class TestDAO {
 		}
 		
 		return true;
+	}
+	
+	//차트에 표시될 데이터 가져오기
+	public int[] getTest() {
+		int[] position = new int[5];
+		String query = "select * from all_view";
+
+		try {
+			Statement stmt = conn.createStatement();
+			ResultSet rs = stmt.executeQuery(query);
+			
+			for(int i = 0; i < 5; i++) {
+				if(rs.next()) position[i] = rs.getInt(2);
+			}
+		} catch (SQLException e) {
+			System.out.println("SQL Error : " + e.getLocalizedMessage());
+		}
+		
+		return position;
 	}
 	
 	//Connection 닫기

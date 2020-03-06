@@ -88,6 +88,7 @@ public class TestController extends HttpServlet{
 						temp = e;
 						result = "서포터";
 					}
+					session.setAttribute("result", result);
 					
 					TestDTO dto = new TestDTO();
 					dto.setNickname(session.getAttribute("nickname").toString());
@@ -96,6 +97,11 @@ public class TestController extends HttpServlet{
 					
 					TestDAO dao = new TestDAO();
 					dao.insertTest(dto);
+					
+					int[] array = dao.getTest();
+					for(int i = 0; i < 5; i++) {
+						session.setAttribute("graph"+i, array[i]);
+					}
 					
 					response.sendRedirect("result.jsp");
 					break;	

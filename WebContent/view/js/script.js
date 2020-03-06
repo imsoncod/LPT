@@ -67,14 +67,20 @@ function resultpage() {
 
 /*그래프 스크립트*/
 function graph(a, b, c, d, e) {
+	alert('Test');
+	console.log(a);
+	console.log(b);
+	console.log(c);
+	console.log(d);
+	console.log(e);
     google.charts.load("current", {packages:["corechart"]});
     google.charts.setOnLoadCallback(drawChart);
     function drawChart() {
       var data = google.visualization.arrayToDataTable([
         ['LPT', 'Positon'],
-        ['미드',  c],
-        ['원딜',  d],
-        ['정글',  b],
+        ['미드', c],
+        ['원딜', d],
+        ['정글', b],
         ['서포터', e],
         ['탑', a]
       ]);
