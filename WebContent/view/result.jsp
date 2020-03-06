@@ -16,9 +16,9 @@
 	</div>
 
 	<div class ="result" >
-		<img  src="img/support.PNG"> <br>
-		<span id="positon">서포터</span> <br><br>
-		<span id="positon_text">당신은 태생적인 서포터입니다.</span> <br><br>
+		<img  src="img/top.png"> <br>
+		<span id="positon">탑</span> <br><br>
+		<span id="positon_text">당신은 독고다이 탑신병자입니다!</span> <br><br>
 		<div id="graph" ></div>
 	</div>
 </body>
