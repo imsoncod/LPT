@@ -66,19 +66,19 @@ function resultpage() {
 }
 
 /*그래프 스크립트*/
-function graph() {
+function graph(a, b, c, d, e) {
     google.charts.load("current", {packages:["corechart"]});
     google.charts.setOnLoadCallback(drawChart);
     function drawChart() {
       var data = google.visualization.arrayToDataTable([
         ['LPT', 'Positon'],
-        ['탑',  5],
-        ['원딜',  3],
-        ['정글',  3.66],
-        ['서포터', 2.316],
-        ['미드', 1.0791]
+        ['미드',  c],
+        ['원딜',  d],
+        ['정글',  b],
+        ['서포터', e],
+        ['탑', a]
       ]);
-
+      
     var options = {
       legend: 'none',
       pieSliceText: 'label',
