@@ -43,6 +43,8 @@ function nextpage() {
 	}
 }
 
+
+
 /*다음 페이지로 넘어갈지 체크*/
 function resultpage() {
 	var go = true; //submit여부를 결정하는 변수
@@ -63,6 +65,10 @@ function resultpage() {
 	if(go==true){
 		document.getElementById("test2").submit();
 	}
+}
+/*도메인 넣을것*/
+function mainpage() {
+	location.href='index.html';
 }
 
 /*그래프 스크립트*/

@@ -33,7 +33,8 @@
 			graph(Number(a), Number(b), Number(c), Number(d), Number(e));
 		</script>
 		<div id="graph"></div><br>
-		<span id="graph_text">[포지션별 나의 성향]</span>
+		<span id="graph_text">[포지션별 나의 성향]</span> <br>
+		<button id="btn_mainpage" type = "button" onclick="mainpage()">메인 페이지</button>
 	</div>
 </body>
 </html>
