@@ -20,6 +20,7 @@ html, body {
 	height: 100hv;
 	font-family: 'main';
 }
+
 /* 레이아웃 디자인 */
 .layout {
 	width: 100%;
@@ -109,6 +110,14 @@ html, body {
 	outline: none;
 }
 
+.mainbox #comment{
+	margin-top: 1em;
+	width: 100%;
+	display: inline-block;
+	color: #808080;
+	text-align: left;
+}
+
 /*질문 디자인*/
 .question_box {
 	width: auto;
@@ -162,7 +171,7 @@ html, body {
 	width: auto;
 	height: auto;
 	text-align: center;
-	margin-top: 165px;
+	margin-top: 100px;
 }
 
 .result #positon{
@@ -192,17 +201,16 @@ html, body {
 	border: 1px solid #BDBDBD;
 	color: #ffffff; 
 	outline: none;
-	position: fixed;
-	transform: translate(-50%, -50%);
-	bottom: 0%;
-	z-index: 1;
+	margin-top: 2%;
 }
 
 /*그래프 디자인*/
 
 .result #graph {
-	width: 30%;
-	height: 100;
+	width: 350px;
+	max-width: auto;
+	height: 270px;
+	max-height: 50%;
 	display: inline-block;
 }
 

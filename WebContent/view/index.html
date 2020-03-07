@@ -2,6 +2,11 @@
 <html>
 <link rel="stylesheet" href="css/style.css?after">
 <head>
+<meta property="og:url" content="http://lpt.new.so/"/>
+<meta property="og:type" content="website" />
+<meta property="og:title" content="LPT : 롤 포지션 테스트" />
+<meta property="og:description" content="나에게 맞는 롤 포지션 찾기" />
+<meta property="og:image" content="img/og.png" />
 <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="js/script.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
@@ -13,7 +18,7 @@
 		<img  src="img/logoname.png"> <br>
 	</div>
 
-	<form id="index" action="index.do" method="post">
+	<form id="index" action="index.do" method="post" onsubmit="return false">
 	
 		<div class="main">
 			<div class="mainbox" >
@@ -24,6 +29,12 @@
 				<script> age_create();</script>
 				</select> <br>
 				<button type="button" id="start_box" onclick="check()"><span id = "start">검사 시작!</span></button>
+				<br>
+				<span id = "comment">
+					Developer : imsoncod, Raison-CJH<br>
+					Designer : krwooju<br>
+					Contact : iustron@naver.com
+				</span>
 			</div>
 		</div>
 		

@@ -90,7 +90,7 @@ function graph(a, b, c, d, e) {
     		    left:10,
     		    right:10,
     		    bottom:10,
-    		    top:50,
+    		    top:10
     	},
     	legend: 'none',
     	pieSliceText: 'label',
