@@ -17,13 +17,13 @@
 	<div class ="result">
 		<img  src="img/top.png"> <br>
 		<span id="positon"><%=session.getAttribute("result") %></span> <br><br>
-		<span id="positon_text">당신은 독고다이 탑신병자입니다!</span> <br><br>
+		<span id="positon_text"><%=session.getAttribute("message") %></span> <br><br>
 		
-		<input id = "a" type = "hidden" value = <%=session.getAttribute("graph0") %>>
-		<input id = "b" type = "hidden" value = <%=session.getAttribute("graph1") %>>
-		<input id = "c" type = "hidden" value = <%=session.getAttribute("graph2") %>>
-		<input id = "d" type = "hidden" value = <%=session.getAttribute("graph3") %>>
-		<input id = "e" type = "hidden" value = <%=session.getAttribute("graph4") %>>
+		<input id = "a" type = "hidden" value = <%=session.getAttribute("a") %>>
+		<input id = "b" type = "hidden" value = <%=session.getAttribute("b") %>>
+		<input id = "c" type = "hidden" value = <%=session.getAttribute("c") %>>
+		<input id = "d" type = "hidden" value = <%=session.getAttribute("d") %>>
+		<input id = "e" type = "hidden" value = <%=session.getAttribute("e") %>>
 		<script>
 			var a = document.getElementById('a').value;
 			var b = document.getElementById('b').value;
