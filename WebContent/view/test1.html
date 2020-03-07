@@ -17,11 +17,34 @@
 		<div class ="question">
 			<span>1. 나는 주변사람들이 나에 대해 어떻게 생각하는지에 대해 민감하다</span><br>
 				<div class = "answer">
-					<input type = "radio" name = "q1" value = "e"> 매우 그렇다 <br>
-					<input type = "radio" name = "q1" value = "b"> 그렇다 <br>
-					<input type = "radio" name = "q1" value = "c"> 보통 <br>
-					<input type = "radio" name = "q1" value = "d"> 아니다 <br>
-					<input type = "radio" name = "q1" value = "a"> 매우 아니다 <br>
+					<ul>
+						<li>
+							<div></div>
+							<input id="a-option" type = "radio" name = "q1" value = "e">
+							<label for="a-option">매우 그렇다</label>
+							<div class="check"></div>
+						</li>
+						<li>
+							<input  id="b-option" type = "radio" name = "q1" value = "b">
+							<label for="b-option">그렇다</label>
+							<div class="check"></div>
+						</li>
+						<li>
+							<input id="c-option"  type = "radio" name = "q1" value = "c">
+							<label for="c-option">보통이다</label>
+							<div class="check"></div>
+						</li>
+						<li>
+							<input id="d-option"  type = "radio" name = "q1" value = "d">
+							<label for="d-option">아니다</label>
+							<div class="check"></div>
+						</li>
+						<li>
+							<input id="e-option"  type = "radio" name = "q1" value = "a">
+							<label for="e-option">매우 아니다</label>
+							<div class="check"></div>
+						</li>
+					</ul>
 			</div>
 		</div><br>
 		<div class ="question">
@@ -115,8 +138,8 @@
 					<input type = "radio" name = "q10" value = "c"> 아니다 <br>
 					<input type = "radio" name = "q10" value = "e"> 매우 아니다 <br>
 			</div>
+				<button id ="btn_nextpage" type = "button" onclick="nextpage()">다음 페이지</button>
 		</div><br>
-		 <button type = "button" onclick="nextpage()">다음 페이지</button>
 		</form>
 		</div>
 	</div>
