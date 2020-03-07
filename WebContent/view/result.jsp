@@ -15,7 +15,7 @@
 	</div>
 
 	<div class ="result">
-		<img  src="img/top.png"> <br>
+		<img  src=<%=session.getAttribute("eng") %>> <br>
 		<span id="positon"><%=session.getAttribute("result") %></span> <br><br>
 		<span id="positon_text"><%=session.getAttribute("message") %></span> <br><br>
 		

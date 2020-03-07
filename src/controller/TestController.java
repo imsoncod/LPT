@@ -75,6 +75,7 @@ public class TestController extends HttpServlet{
 					session.setAttribute("d", d);
 					session.setAttribute("e", e);
 					
+					String eng = "img/top.png";
 					String result = "탑";
 					String message = "고독을 견딜 준비가 되셨나요?";
 					int temp = a;
@@ -87,6 +88,7 @@ public class TestController extends HttpServlet{
 					
 					if(temp < b) {
 						temp = b;
+						eng = "img/jungle.png";
 						result = "정글";
 						message = "어디든지 부르면 달려갈 준비가 되셨군요?";
 						if(temp >= 7) {
@@ -98,6 +100,7 @@ public class TestController extends HttpServlet{
 					}
 					if(temp < c) {
 						temp = c;
+						eng = "img/mid.png";
 						result = "미드";
 						message = "야스오는 추천드리지 않습니다";
 						if(temp >= 7) {
@@ -109,6 +112,7 @@ public class TestController extends HttpServlet{
 					}
 					if(temp < d) {
 						temp = d;
+						eng = "img/ad.png";
 						result = "원딜";
 						message = "서포터와 호흡을 맞춰 게임을 승리로 이끌어보세요!";
 						if(temp >= 7) {
@@ -120,6 +124,7 @@ public class TestController extends HttpServlet{
 					}
 					if(temp < e) {
 						temp = e;
+						eng = "img/support.png";
 						result = "서포터";
 						message = "사랑으로 원딜을 보살펴주세요!";
 						if(temp >= 7) {
@@ -129,6 +134,7 @@ public class TestController extends HttpServlet{
 							message = "cs 취식은 범죄에 해당합니다";
 						}
 					}
+					session.setAttribute("eng", eng);
 					session.setAttribute("result", result);
 					session.setAttribute("message", message);
 					
