@@ -86,6 +86,12 @@ function graph(a, b, c, d, e) {
       ]);
       
     var options = {
+    	chartArea:{
+    		    left:10,
+    		    right:10,
+    		    bottom:10,
+    		    top:50,
+    	},
     	legend: 'none',
     	pieSliceText: 'label',
     	pieStartAngle: 100,
