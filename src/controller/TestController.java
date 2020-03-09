@@ -15,6 +15,7 @@ public class TestController extends HttpServlet{
 	public void doPost(HttpServletRequest request, HttpServletResponse response) 
 	throws ServletException, IOException
 	{
+		request.setCharacterEncoding("UTF-8");
 		String uri = request.getRequestURI();
 		//System.out.println("uri = " + uri);
 		
