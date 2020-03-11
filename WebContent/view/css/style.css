@@ -36,6 +36,55 @@ html, body {
 	margin-top: 18px;
 }
 
+/*공지 디지인*/
+.notice_box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60%;
+    max-height: 400px;
+    width: 91%;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #81BEF7;
+    border-radius: 10px;
+    border: 1px solid #006ecb;
+    max-width: 350px;
+    padding-top: 1%;
+}
+
+.notice{
+	padding: 2%;
+	overflow: auto;
+	display: inline-block;
+	background: white;
+	border-radius: 10px;
+    border: 1px white;
+    margin-top: 2%;
+    width: 90%;
+    height: 60%;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 2.3em;
+}
+
+.notice_box #notice_btn{
+	padding: 2%;
+	position: absolute;
+	display: inline-block;
+	background: white;
+	border-radius: 10px;
+    border: 1px white;
+    width: 95%;
+    height: 40px;
+ 	bottom: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
 /* 메인 디자인 */
 .main {
 	width: auto;

@@ -7,6 +7,11 @@ function age_create() {
 		}
 }
 
+/*공지 닫기*/
+function cancel(){
+	document.getElementById("notice_box").style.display = 'none';
+}
+
 /*이름 및 나이 체크 */
 function check() {
 	var nickname = document.getElementById("nickname").value;
