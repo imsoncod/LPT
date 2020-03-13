@@ -239,7 +239,7 @@ html, body {
 
 .result #btn_mainpage {
 	width:80%;
-	max-width: auto;
+	max-width: 728px;
 	height: 3em;
 	background: #58ACFA;
 	font-weight: bold;
