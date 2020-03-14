@@ -1,3 +1,45 @@
+/*facebook*/
+function facebook(){
+	window.open('http://www.facebook.com/sharer/sharer.php?u=http://lolpt.site');
+}
+
+/*kakao*/
+function kakao(){
+	 Kakao.init("7c9dd3736a9b7447af27693340fc2398");      // 사용할 앱의 JavaScript 키를 설정
+     Kakao.Link.sendDefault({
+           objectType:"feed"
+         , content : {
+               title:"LPT : 롤 포지션 테스트"   // 콘텐츠의 타이틀
+             , description:"나에게 맞는 롤 포지션 찾기!"   // 콘텐츠 상세설명
+             , imageUrl:"http://lolpt.site/LPT/img/share.png"   // 썸네일 이미지
+             , link : {
+                   mobileWebUrl:"http://lolpt.site"   // 모바일 카카오톡에서 사용하는 웹 링크 URL
+                 , webUrl:"http://lolpt.site" // PC버전 카카오톡에서 사용하는 웹 링크 URL
+             }
+         }
+         , social : {
+               likeCount:0      // LIKE 개수
+             , commentCount:0    // 댓글 개수
+             , sharedCount:0     // 공유 회수
+         }
+         , buttons : [
+             {
+                   title:"나도 해볼까?"    // 버튼 제목
+                 , link : {
+                     mobileWebUrl:"http://lolpt.site"   // 모바일 카카오톡에서 사용하는 웹 링크 URL
+                   , webUrl:"http://lolpt.site" // PC버전 카카오톡에서 사용하는 웹 링크 URL
+                 }
+             }
+         ]
+     });
+}
+
+/*naver*/
+function naver(){
+	window.open('http://share.naver.com/web/shareView.nhn?url='+encodeURIComponent('http://lolpt.site')+'&title='+encodeURIComponent('롤 포지션 테스트'));
+}
+
+
 /*Ad*/
 function Ad(){
 	if (/android|webos|iphone|ipad|ipod|blackberry|windows phone/i.test(navigator.userAgent))

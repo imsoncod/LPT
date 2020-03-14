@@ -2,12 +2,13 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="css/style.css?ver1">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <meta charset="UTF-8">
-<script src="js/script.js?ver1"></script>
+<script src="js/script.js?ver3"></script>
+<link rel="stylesheet" href="css/style.css?ver3">
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/JavaScript" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 <title>LPT : 롤 포지션 테스트</title>
 </head>
 <body>
@@ -16,6 +17,11 @@
 	</div>
 
 	<div class ="result">
+	<div class = "sns">
+		<img src = "img/facebook.png" onclick="facebook()"/>
+		<img src = "img/kakao.png" onclick="kakao()"/>
+		<img src = "img/naver.png" onclick="naver()"/>
+	</div><br>
 		<img  src=<%=session.getAttribute("eng") %>> <br>
 		<span id="positon"><%=session.getAttribute("result") %></span> <br><br>
 		<span id="positon_text"><%=session.getAttribute("message") %></span> <br><br>
