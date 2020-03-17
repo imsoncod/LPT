@@ -5,8 +5,8 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <meta charset="UTF-8">
-<script src="js/script.js?ver3"></script>
-<link rel="stylesheet" href="css/style.css?ver3">
+<script src="js/script.js?ver4"></script>
+<link rel="stylesheet" href="css/style.css?ver4">
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/JavaScript" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 <title>LPT : 롤 포지션 테스트</title>
@@ -41,7 +41,7 @@
 		<div id="graph"></div><br>
 		<span id="graph_text">[포지션별 나의 성향]</span> <br>
 		<button id="btn_mainpage" type = "button" onclick="mainpage()">메인 페이지</button><br><br>
-		<script>Ad();</script><br>
+		<script>Ad2();</script><br>
 	</div>
 </body>
 </html>
