@@ -71,6 +71,10 @@ html, body {
     line-height: 2.3em;
 }
 
+.notice span{
+	color: red;
+}
+
 .notice_box #notice_btn{
 	padding: 2%;
 	position: absolute;

@@ -5,8 +5,8 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <meta charset="UTF-8">
-<script src="js/script.js?ver4"></script>
-<link rel="stylesheet" href="css/style.css?ver4">
+<script src="js/script.js?ver5"></script>
+<link rel="stylesheet" href="css/style.css?ver5">
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/JavaScript" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 <title>LPT : 롤 포지션 테스트</title>
